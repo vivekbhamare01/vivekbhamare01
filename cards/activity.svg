@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="title description">
+  <title id="title">Monthly GitHub contribution activity</title>
+  <desc id="description">Real monthly contribution activity will appear after GitHub access is configured.</desc>
+  <style>
+    text { text-rendering: geometricPrecision; }
+.enter { animation: rise .75s cubic-bezier(.2,.7,.2,1) both; }
+.enter-2 { animation-delay: .12s; }
+.enter-3 { animation-delay: .24s; }
+.drift { animation: drift 5s ease-in-out infinite alternate; }
+.orbit { transform-box: fill-box; transform-origin: center; animation: orbit 16s linear infinite; }
+@keyframes rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes drift {
+    from { transform: translateY(-4px); }
+    to { transform: translateY(5px); }
+}
+@keyframes orbit { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; }
+}
+</style>
+
+  <rect x="1" y="1" width="958" height="338" rx="22" fill="#F5F1E8" stroke="#D8D2C5" stroke-width="1.5"/>
+  <path d="M24 24h34" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="922" cy="38" r="13" fill="none" stroke="#2563EB" stroke-width="1.5" opacity=".65" class="orbit"/>
+  <circle cx="922" cy="38" r="3" fill="#2563EB" class="drift"/>
+  <text x="24" y="321" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="10" font-weight="600" fill="#69665F">MONTHLY CONTRIBUTIONS</text>
+<text x="26" y="73" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="26" font-weight="700" fill="#222222" class="enter">ACTIVITY</text><text x="26" y="139" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="400" fill="#222222">GitHub contribution data is currently unavailable.</text><text x="26" y="174" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="400" fill="#69665F">Configure GH_TOKEN; the scheduled workflow will retry.</text><text x="26" y="222" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="400" fill="#69665F">No placeholder or estimated statistics are shown.</text>
+</svg>

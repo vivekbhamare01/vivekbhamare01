@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "available": false,
+  "username": "vivekbhamare01",
+  "fetchedAt": null,
+  "periodStart": null,
+  "periodEnd": null,
+  "totalContributions": null,
+  "months": [],
+  "days": [],
+  "message": "Add GH_TOKEN as a repository Actions secret to enable contribution data."
+}

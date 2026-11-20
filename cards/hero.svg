@@ -1,52 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title description">
+  <title id="title">Vivek Bhamare — GitHub profile</title>
+  <desc id="description">Animated introduction: BCA student and aspiring data scientist from Maharashtra, India.</desc>
+  <style>
+    text { text-rendering: geometricPrecision; }
+.enter { animation: rise .75s cubic-bezier(.2,.7,.2,1) both; }
+.enter-2 { animation-delay: .12s; }
+.enter-3 { animation-delay: .24s; }
+.drift { animation: drift 5s ease-in-out infinite alternate; }
+.orbit { transform-box: fill-box; transform-origin: center; animation: orbit 16s linear infinite; }
+@keyframes rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes drift {
+    from { transform: translateY(-4px); }
+    to { transform: translateY(5px); }
+}
+@keyframes orbit { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; }
+}
+</style>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="250">
-
-    <style>
-        .hello {
-            animation: fadeIn 1s ease forwards;
-        }
-
-        .name {
-            animation: slideUp 1.5s ease forwards;
-        }
-
-        .subtitle {
-            animation: fadeIn 2.5s ease forwards;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-
-    <rect width="100%" height="100%" fill="#F5F1E8"/>
-
-    <text x="50" y="90" font-size="24"
-          fill="#2563EB" class="hello">
-        HELLO, I'M
-    </text>
-
-    <text x="50" y="155" font-size="55"
-          font-weight="bold" fill="#222222"
-          class="name">
-        VIVEK BHAMARE
-    </text>
-
-    <text x="50" y="200" font-size="20"
-          fill="#555555" class="subtitle">
-        BCA Student | Aspiring Data Scientist
-    </text>
+  <rect x="1" y="1" width="1198" height="398" rx="26" fill="#F5F1E8" stroke="#D8D2C5" stroke-width="1.5"/>
+  <path d="M54 52h44" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+  <g class="enter">
+    <text x="58" y="112" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="700" fill="#2563EB">HELLO, I'M</text>
+  </g>
+  <g class="enter enter-2">
+    <text x="54" y="202" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" letter-spacing="-2" fill="#222222">VIVEK BHAMARE</text>
+  </g>
+  <g class="enter enter-3">
+    <text x="58" y="250" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="500" fill="#222222">BCA Student  /  Aspiring Data Scientist</text>
+    <text x="58" y="289" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="400" fill="#69665F">Interested in software development &amp; data analytics.</text>
+    <text x="58" y="345" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600" fill="#69665F">MAHARASHTRA, INDIA</text>
+  </g>
+  <g transform="translate(900 198)">
+    <circle r="106" fill="none" stroke="#D8D2C5" stroke-width="1"/>
+    <circle r="78" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="3 9" opacity=".62" class="orbit"/>
+    <circle r="50" fill="#2563EB" opacity=".08"/>
+    <path d="M-50 0h100M0-50v100" stroke="#D8D2C5" stroke-width="1"/>
+    <circle cx="-106" cy="-34" r="7" fill="#E85D5D" class="drift"/>
+    <circle cx="69" cy="-78" r="6" fill="#EAB308" class="drift"/>
+    <circle cx="82" cy="69" r="5" fill="#2563EB" class="drift"/>
+    <circle r="13" fill="#2563EB" opacity=".88"/>
+    <circle cx="-28" cy="25" r="8" fill="#E85D5D" opacity=".9"/>
+    <circle cx="30" cy="-24" r="6" fill="#EAB308"/>
+  </g>
+  <path d="M54 370h1090" stroke="#D8D2C5" stroke-width="1"/>
+  <text x="1144" y="390" text-anchor="end" font-family="ui-monospace, monospace" font-size="10" fill="#69665F">01 / PROFILE</text>
 
 </svg>
