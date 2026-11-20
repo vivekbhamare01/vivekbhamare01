@@ -1,3 +1,5 @@
 # Hi, I'm Vivek Bhamare 👋
 
-Welcome to my GitHub Profile!
+<p align="center">
+  <img src="./cards/hero.svg" width="100%">
+</p>
