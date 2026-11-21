@@ -8,5 +8,5 @@
   "totalContributions": null,
   "months": [],
   "days": [],
-  "message": "Add GH_TOKEN as a repository Actions secret to enable contribution data."
+  "message": "GitHub contribution data could not be fetched right now."
 }
